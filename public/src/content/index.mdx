@@ -1,9 +1,18 @@
+export const Ref = ({id}) => {
+  return <a href={`#fn-${id}`}><sup>{id}</sup></a>
+}
 
-More than 37 million Americans have diabetes.
+export const Footnote = ({id}) => {
+  return <a id={`fn-${id}`}><sup>{id}</sup></a>
+}
 
-Insulin belongs to the people.
+Insulin is an essential medicine for more than 37 million Americans. Yet its high price prevents many from accessing this important medicine. There are a multitude of reasons for insulin's high price, but a key one is this: three companies (Eli Lilly, Novo Nordisk, and Sanofi) and three distributors<Ref id="1" /> (CVS Caremark, Express Scripts, and Optum Rx) control access to most of the US's supply of insulin.<Ref id="2" />
 
-Insulin the U.S. costs almost $100 per unit, on average.
+**We can increase access by increasing supply (and competition).**
 
-- Which insulins do people use the most often?
-  - How much do they pay for them?
+
+### Footnotes
+
+<Footnote id="1" />More specifically, these distributors are called Pharmacy Benefit Managers (PBMs).
+
+<Footnote id="2" />[Inside the Senate Report on Rising Insulin Prices](https://beyondtype1.org/senate-insulin-report/)
