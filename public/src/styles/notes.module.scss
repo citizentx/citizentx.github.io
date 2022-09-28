@@ -1,0 +1,32 @@
+.mainContainer {
+    max-width: 90ch;
+    margin: 0 auto;
+    padding: 0 20px 30px 20px;
+
+    h2 {
+        border-bottom: 2px solid #666;
+    }
+}
+
+li {
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+}
+
+.footnotes {
+    border-top: 2px solid #666;
+    margin-top: 2rem;
+
+    h3 {
+        margin-bottom: 0;
+    }
+    
+    p {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    sup {
+        font-size: 0.9rem;
+    }
+}

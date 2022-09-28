@@ -1,0 +1,58 @@
+@import "fonts.scss";
+
+:root {
+    font-size: 12pt;
+    font-family: $serif;
+}
+
+html, body {
+    color: #333;
+}
+
+figcaption {
+    text-align: center;
+    color: #999;
+}
+
+a {
+    color: #222;
+    padding: 0px 2px;
+}
+
+a:hover {
+    color: white;
+    background: #555;
+}
+
+deckgo-highlight-code {
+    font-size: 11pt;
+    box-shadow: none;
+    --deckgo-highlight-code-token-comment: #a1a1a1;
+    --deckgo-highlight-code-carbon-overflow: scroll;
+    --deckgo-highlight-code-white-space: pre;
+    --deckgo-highlight-code-carbon-header-button-height: 8px;
+    --deckgo-highlight-code-carbon-header-button-width: 8px;
+    --deckgo-highlight-code-carbon-header-padding: 0px 1rem;
+}
+
+code {
+    background-color: #fdf6e3;
+    color: #657b83;
+    border-radius: 5px;
+    padding: 1px 3px 3px 3px;
+    font-family: $mono;
+}
+
+.anchor {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.anchor:hover {
+    background-color: transparent;
+    color: lightskyblue;
+}
+
+.katex {
+    font-size: 1.1em !important;
+}
