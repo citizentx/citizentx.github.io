@@ -5,27 +5,45 @@ import ReactFlow, { Controls, Background, MarkerType } from "reactflow"
 export const Flow = () => {
   const nodes = [
     {
-      id: "1",
-      data: { label: "Cancer cell line culture" },
+      id: "A1",
+      data: { label: "Cell line culture (e.g. HEK293)" },
       position: { x: 0, y: 0 },
-      type: "input",
     },
     {
-      id: "2",
-      data: { label: "Cancer organoid culture" },
+      id: "A2",
+      data: { label: "Cancer cell line culture" },
       position: { x: 0, y: 100 },
+    },
+    {
+      id: "A3",
+      data: { label: "Cancer organoid culture" },
+      position: { x: 0, y: 200 },
+    },
+    {
+      id: "B1",
+      data: { label: "Microfluidics" },
+      position: { x: 200, y: 0 },
     }
   ]
   const edges = [
     {
-      id: "1-2",
-      source: "1",
-      target: "2",
+      id: "A1-A2",
+      source: "A1",
+      target: "A2",
       type: "step",
       markerEnd: {
         type: MarkerType.ArrowClosed
       }
-    }
+    },
+    {
+      id: "A2-A3",
+      source: "A2",
+      target: "A3",
+      type: "step",
+      markerEnd: {
+        type: MarkerType.ArrowClosed
+      }
+    },
   ]
   return (
     <div style={{ height: "1000px" }}>
