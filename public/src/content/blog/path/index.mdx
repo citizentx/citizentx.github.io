@@ -1,0 +1,40 @@
+# Research pathway
+
+import ReactFlow, { Controls, Background, MarkerType } from "reactflow"
+
+export const Flow = () => {
+  const nodes = [
+    {
+      id: "1",
+      data: { label: "Cancer cell line culture" },
+      position: { x: 0, y: 0 },
+      type: "input",
+    },
+    {
+      id: "2",
+      data: { label: "Cancer organoid culture" },
+      position: { x: 0, y: 100 },
+    }
+  ]
+  const edges = [
+    {
+      id: "1-2",
+      source: "1",
+      target: "2",
+      type: "step",
+      markerEnd: {
+        type: MarkerType.ArrowClosed
+      }
+    }
+  ]
+  return (
+    <div style={{ height: "1000px" }}>
+      <ReactFlow nodes={nodes} edges={edges}>
+        <Background />
+        <Controls />
+      </ReactFlow>
+    </div>
+  )
+}
+
+<Flow />
